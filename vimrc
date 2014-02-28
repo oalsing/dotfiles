@@ -23,6 +23,11 @@ execute pathogen#infect()
 " Map
 map <F7> mzgg=G`z<CR>
 map <C-n> :NERDTreeToggle<CR>
+map + <c-w>+
+map - <c-w>-
+map <s-n> <c-w><
+map <s-m> <c-w>>
+map <c-d> :quit<CR>
 
 " Commands
 :command WQ wq
