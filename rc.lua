@@ -449,7 +449,6 @@ autorun = true
 autorunApps = 
 { 
 	"google-chrome",
-	"thunderbird",
     "nm-applet",
     "ssh-agent",
 	"dropbox",
