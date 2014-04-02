@@ -451,7 +451,6 @@ autorunApps =
 	"google-chrome",
     "nm-applet",
     "ssh-agent",
-	"dropbox",
     "gnome-screensaver",
 }
 if autorun then

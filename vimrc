@@ -21,6 +21,8 @@ Bundle 'basepi/vim-conque'
 :set expandtab
 :set tabstop=4
 :set shiftwidth=4
+:set textwidth=80
+:set colorcolumn=+1
 :set ruler
 
 " Scheme
@@ -50,6 +52,8 @@ nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>   
 nmap <silent> <c-h> :wincmd h<CR>                                                                    
 nmap <silent> <c-l> :wincmd l<CR>
+map <C-u> m`b~``
+
 " Commands
 :command WQ wq
 :command Wq wq
