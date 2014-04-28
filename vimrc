@@ -3,18 +3,19 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#rc()
+call vundle#begin()
 " alternatively, pass a path where Vundle should install bundles
 "let path = '~/some/path/here'
 "call vundle#rc(path)
 
 " let Vundle manage Vundle, required
-Bundle 'gmarik/vundle'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-fugitive'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'basepi/vim-conque'
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'basepi/vim-conque'
 
 " Tabs and line number
 :set number
@@ -46,7 +47,7 @@ map + <c-w>+
 map - <c-w>-
 map <s-n> <c-w><
 map <s-m> <c-w>>
-map <c-d> :quit<CR>
+map <c-x> :quit<CR>
 nmap <silent> <c-c> :ConqueTerm bash<Cr>
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>   
