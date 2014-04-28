@@ -17,6 +17,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'basepi/vim-conque'
 
+call vundle#end()
+filetype plugin indent on
 " Tabs and line number
 :set number
 :set expandtab
