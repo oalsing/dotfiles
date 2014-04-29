@@ -21,6 +21,7 @@ Plugin 'nixon/vim-vmath'
 
 call vundle#end()
 filetype plugin indent on
+
 " Tabs and line number
 :set number
 :set expandtab
@@ -29,8 +30,8 @@ filetype plugin indent on
 :set textwidth=80
 :set colorcolumn=+1
 :set ruler
-"Show tabs and trail
-:set listchars=tab:>~,nbsp:_,trail:.
+"Show tabs and trail"
+:set listchars=tab:>~,trail:.,nbsp:_
 :set list
 
 " Scheme
@@ -46,6 +47,30 @@ filetype plugin indent on
 
 " Search
 :set incsearch
+:set hlsearch
+
+" This rewires n and N to do the highlighing...
+nnoremap <silent> n   n:call HLNext(0.4)<cr>
+nnoremap <silent> N   N:call HLNext(0.4)<cr>
+
+" OR ELSE ring the match in red...
+function! HLNext (blinktime)
+    highlight RedOnRed ctermfg=red ctermbg=red
+    let [bufnum, lnum, col, off] = getpos('.')
+    let matchlen = strlen(matchstr(strpart(getline('.'),col-1),@/))
+    echo matchlen
+    let ring_pat = (lnum > 1 ? '\%'.(lnum-1).'l\%>'.max([col-4,1]) .'v\%<'.(col+matchlen+3).'v.\|' : '')
+                \ . '\%'.lnum.'l\%>'.max([col-4,1]) .'v\%<'.col.'v.'
+                \ . '\|'
+                \ . '\%'.lnum.'l\%>'.max([col+matchlen-1,1]) .'v\%<'.(col+matchlen+3).'v.'
+                \ . '\|'
+                \ . '\%'.(lnum+1).'l\%>'.max([col-4,1]) .'v\%<'.(col+matchlen+3).'v.'
+    let ring = matchadd('RedOnRed', ring_pat, 101)
+    redraw
+    exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
+    call matchdelete(ring)
+    redraw
+endfunction
 
 " Map
 map <F7> mzgg=G`z<CR>
@@ -84,10 +109,10 @@ let g:ctrlp_cmd = 'CtrlP'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ 'link': 'some_bad_symbolic_links',
-  \ }
+            \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+            \ 'file': '\v\.(exe|so|dll)$',
+            \ 'link': 'some_bad_symbolic_links',
+            \ }
 let g:ctrlp_max_files = 0
 
 "vmath
