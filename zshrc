@@ -75,3 +75,6 @@ eval "$(rbenv init -)"
 alias gff='git pull --ff-only'
 alias kths='ssh u-shell.csc.kth.se'
 alias tb='./Downloads/tor-browser_en-US/start-tor-browser'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
