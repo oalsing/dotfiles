@@ -17,6 +17,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'basepi/vim-conque'
+Plugin 'nixon/vim-vmath'
 
 call vundle#end()
 filetype plugin indent on
@@ -88,3 +89,7 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 let g:ctrlp_max_files = 0
+
+"vmath
+vmap <expr>  ++  VMATH_YankAndAnalyse()
+nmap         ++  vip++
