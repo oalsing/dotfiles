@@ -83,6 +83,7 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>                                                                    
 nmap <silent> <c-l> :wincmd l<CR>
 map <C-u> m`b~``
+nnoremap <esc> :noh<return><esc>
 
 " Commands
 :command WQ wq
