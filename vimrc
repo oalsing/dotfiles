@@ -104,6 +104,12 @@ au Syntax * RainbowParenthesesLoadBraces
 "ctrpl
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+set wildmode=list:longest,full
+set wildignore=*~,*.swp
+set wildignore+=a.out,*.a,*.o,*.class
+set wildignore+=*.aux,*.idx,*.ilg,*.ind,*.lof,*.lot,*.out,*.toc
+set wildignore+=*.tar,*.gz,*.zip
+set wildignore+=.git/*,.gitkeep,.svn/*,.hg/*
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 let g:ctrlp_custom_ignore = {
             \ 'dir':  '\v[\/]\.(git|hg|svn)$',
@@ -121,4 +127,5 @@ nnoremap v <C-V>
 nnoremap <C-V> v
 
 vnoremap v <C-V>
+A
 vnoremap <C-V> v
