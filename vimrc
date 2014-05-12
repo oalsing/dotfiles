@@ -127,5 +127,4 @@ nnoremap v <C-V>
 nnoremap <C-V> v
 
 vnoremap v <C-V>
-A
 vnoremap <C-V> v
