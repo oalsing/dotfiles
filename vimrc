@@ -83,6 +83,7 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>                                                                    
 nmap <silent> <c-l> :wincmd l<CR>
 map <C-u> m`b~``
+nnoremap <esc> :noh<return><esc>
 
 " Commands
 :command WQ wq
@@ -103,6 +104,12 @@ au Syntax * RainbowParenthesesLoadBraces
 "ctrpl
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+set wildmode=list:longest,full
+set wildignore=*~,*.swp
+set wildignore+=a.out,*.a,*.o,*.class
+set wildignore+=*.aux,*.idx,*.ilg,*.ind,*.lof,*.lot,*.out,*.toc
+set wildignore+=*.tar,*.gz,*.zip
+set wildignore+=.git/*,.gitkeep,.svn/*,.hg/*
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 let g:ctrlp_custom_ignore = {
             \ 'dir':  '\v[\/]\.(git|hg|svn)$',
