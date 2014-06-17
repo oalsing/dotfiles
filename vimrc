@@ -18,6 +18,7 @@ Plugin 'nixon/vim-vmath'
 
 call vundle#end()
 filetype plugin indent on
+syntax on
 
 " Tabs and line number
 :set number
