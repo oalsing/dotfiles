@@ -31,6 +31,9 @@ filetype plugin indent on
 :set listchars=tab:>~,trail:.,nbsp:_
 :set list
 
+" Nerdtree on mac
+let g:NERDTreeDirArrows=0
+
 " Scheme
 :colorscheme elflord
 :set background=dark
