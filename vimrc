@@ -39,6 +39,9 @@ let g:NERDTreeDirArrows=0
 :colorscheme elflord
 :set background=dark
 
+" Clipboard Mac OSX
+set clipboard=unnamed,unnamedplus
+
 " Indentation
 :filetype indent on
 :filetype plugin on
@@ -124,10 +127,3 @@ let g:ctrlp_max_files = 0
 "vmath
 vmap <expr>  ++  VMATH_YankAndAnalyse()
 nmap         ++  vip++
-
-" Visual Block mode is far more useful that Visual mode (so swap the commands)...
-"nnoremap v <C-V>
-"nnoremap <C-V> v
-
-"vnoremap v <C-V>
-"vnoremap <C-V> v
