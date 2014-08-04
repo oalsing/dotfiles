@@ -1,6 +1,6 @@
 [user]
-    email = oscar.alsing@gmail.com
-    name = oalsing
+	email = oscar.alsing@gmail.com
+	name = oalsing
 [push]
     default = simple
 [alias]
@@ -15,3 +15,11 @@
     br = branch
     pff = pull --ff-only
     su = submodule update --init --recursive
+[core]
+	excludesfile = /Users/oalsing/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
