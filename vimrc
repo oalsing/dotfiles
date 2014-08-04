@@ -40,7 +40,7 @@ let g:NERDTreeDirArrows=0
 :set background=dark
 
 " Clipboard Mac OSX
-set clipboard=unnamed,unnamedplus
+"set clipboard=unnamed,unnamedplus
 
 " Indentation
 :filetype indent on
