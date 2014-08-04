@@ -92,6 +92,7 @@ nmap <silent> <c-l> :wincmd l<CR>
 map <C-u> m`b~``
 
 " Commands
+:command QW wq
 :command WQ wq
 :command Wq wq
 :command W w
