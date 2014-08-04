@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/heroku/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/oalsing/.rvm/gems/ruby-2.0.0-p247/bin:/home/oalsing/.rvm/gems/ruby-2.0.0-p247@global/bin:/home/oalsing/.rvm/rubies/ruby-2.0.0-p247/bin:/home/oalsing/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/oalsing/.rvm/bin"
+export PATH="/usr/local/bin:/usr/local/heroku/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/oalsing/.rvm/gems/ruby-2.0.0-p247/bin:/home/oalsing/.rvm/gems/ruby-2.0.0-p247@global/bin:/home/oalsing/.rvm/rubies/ruby-2.0.0-p247/bin:/home/oalsing/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/oalsing/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
