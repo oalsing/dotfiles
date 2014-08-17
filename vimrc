@@ -41,6 +41,8 @@ let g:NERDTreeDirArrows=0
 
 " Clipboard Mac OSX
 "set clipboard=unnamed,unnamedplus
+" Backspace mac
+:set backspace=indent,eol,start
 
 " Indentation
 :filetype indent on
