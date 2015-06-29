@@ -14,8 +14,9 @@
     st = status
     br = branch
     pff = pull --ff-only
+    mff = merge --no-ff
     su = submodule update --init --recursive
-    rmcached = rm --cached `git ls-files -i --exclude-from=.gitignore`
+    rmcached = rm --cached 'git ls-files -i --exclude-from=.gitignore'
 [core]
 	excludesfile = /Users/oalsing/.gitignore_global
 [difftool "sourcetree"]

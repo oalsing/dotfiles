@@ -51,8 +51,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/texbin:/usr/local/bin:/usr/local/heroku/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/oalsing/.rvm/gems/ruby-2.0.0-p247/bin:/home/oalsing/.rvm/gems/ruby-2.0.0-p247@global/bin:/home/oalsing/.rvm/rubies/ruby-2.0.0-p247/bin:/home/oalsing/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/oalsing/.rvm/bin"
+export PATH="/usr/texbin:/usr/local/bin:/usr/local/heroku/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/oalsing/.rvm/gems/ruby-2.0.0-p247/bin:/home/oalsing/.rvm/gems/ruby-2.0.0-p247@global/bin:/home/oalsing/.rvm/rubies/ruby-2.0.0-p247/bin:/home/oalsing/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/oalsing/.rvm/bin:/usr/local/share/python"
 # export MANPATH="/usr/local/man:$MANPATH"
+# export JAVA_HOME=$(/usr/bin/java)
 
 # # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -76,6 +77,7 @@ alias gff='git pull --ff-only'
 alias kths='ssh u-shell.csc.kth.se'
 alias tb='./Downloads/tor-browser_en-US/start-tor-browser'
 alias getip='route -n'
+alias web='python -m SimpleHTTPServer 8000'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -125,3 +127,6 @@ alias cbwd="pwd | cb"
 alias cbhs="cat $HISTFILE | tail -n 1 | cb"  
 # Tree
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+
+export LC_ALL=en_AU.UTF-8
+export LANG=en_AU.UTF-8
