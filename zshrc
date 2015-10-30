@@ -130,3 +130,7 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 export LC_ALL=en_AU.UTF-8
 export LANG=en_AU.UTF-8
+
+eval "$(thefuck --alias)"
+eval "$(thefuck --alias FUCK)"
+
