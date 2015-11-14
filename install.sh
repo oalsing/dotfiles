@@ -9,3 +9,4 @@ ln -s dotfiles/vim .vim
 mkdir .weechat
 ln -s dotfiles/weechat.conf .weechat/weechat.conf
 ln -s dotfiles/irc.conf .weechat/irc.conf
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
