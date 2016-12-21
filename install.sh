@@ -1,5 +1,8 @@
 # installs most common config files
 cd
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install zsh zsh-completions tmux
+cd
 rm -r .vim .vimrc .tmux.conf .zshrc .gitconfig
 ln -s dotfiles/vimrc .vimrc
 ln -s dotfiles/tmux.conf .tmux.conf
