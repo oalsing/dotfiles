@@ -1,7 +1,10 @@
 # installs most common config files
 cd
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install zsh zsh-completions tmux
+brew install zsh zsh-completions tmux reattach-to-user-namespace
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+sudo easy_install pip
+sudo pip install thefuck
 cd
 rm -r .vim .vimrc .tmux.conf .zshrc .gitconfig
 ln -s dotfiles/vimrc .vimrc
