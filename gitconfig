@@ -18,7 +18,7 @@
     su = submodule update --init --recursive
     rmcached = rm --cached 'git ls-files -i --exclude-from=.gitignore'
 [core]
-	excludesfile = /Users/oalsing/.gitignore_global
+	excludesfile = /Users/oscaralsing/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

@@ -127,7 +127,7 @@ alias cbwd="pwd | cb"
 alias cbhs="cat $HISTFILE | tail -n 1 | cb"  
 # Tree
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-alias vim="/usr/bin/vim"
+alias vim="/usr/local/bin/vim"
 
 export LC_ALL=en_AU.UTF-8
 export LANG=en_AU.UTF-8
