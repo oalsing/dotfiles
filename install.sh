@@ -4,7 +4,7 @@ cd
 brew install zsh zsh-completions tmux reattach-to-user-namespace vim python3
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 sudo easy_install pip
-sudo pip install thefuck
+sudo pip install thefuck virtualenv
 cd
 rm -r .vim .vimrc .tmux.conf .zshrc .gitconfig
 ln -s dotfiles/vimrc .vimrc
