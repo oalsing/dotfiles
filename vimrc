@@ -10,11 +10,8 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-fugitive'
 Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'basepi/vim-conque'
-Plugin 'nixon/vim-vmath'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -81,12 +78,13 @@ endfunction
 " Map
 map <F7> mzgg=G`z<CR>
 map <C-n> :NERDTreeToggle<CR>
+map <S-b> :new<CR>
+map <S-v> :vert new<CR>
 map + <c-w>+
 map - <c-w>-
 map <s-n> <c-w><
 map <s-m> <c-w>>
 map <c-x> :quit<CR>
-nmap <silent> <c-c> :ConqueTerm bash<Cr>
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>   
 nmap <silent> <c-h> :wincmd h<CR>                                                                    
