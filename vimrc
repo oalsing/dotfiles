@@ -9,7 +9,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-surround' " cs%'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 
