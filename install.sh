@@ -1,10 +1,11 @@
 # installs most common config files
 cd
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install zsh zsh-completions tmux reattach-to-user-namespace vim python3 postgresql
+brew install zsh zsh-completions tmux reattach-to-user-namespace vim python3 postgresql node
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 sudo easy_install pip
 sudo pip install thefuck virtualenv
+npm install -g bower
 cd
 rm -r .vim .vimrc .tmux.conf .zshrc .gitconfig
 ln -s dotfiles/vimrc .vimrc
