@@ -13,6 +13,9 @@ Plugin 'tpope/vim-surround' " cs%'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
@@ -129,3 +132,6 @@ let g:ctrlp_max_files = 0
 " gitgutter
 let g:gitgutter_realtime = 1
 set updatetime=250
+
+" airline
+set laststatus=2
