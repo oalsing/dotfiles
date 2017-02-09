@@ -124,7 +124,3 @@ let g:ctrlp_custom_ignore = {
             \ 'link': 'some_bad_symbolic_links',
             \ }
 let g:ctrlp_max_files = 0
-
-"vmath
-vmap <expr>  ++  VMATH_YankAndAnalyse()
-nmap         ++  vip++
