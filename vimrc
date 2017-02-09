@@ -12,6 +12,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround' " cs%'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
 filetype plugin indent on
@@ -124,3 +125,7 @@ let g:ctrlp_custom_ignore = {
             \ 'link': 'some_bad_symbolic_links',
             \ }
 let g:ctrlp_max_files = 0
+
+" gitgutter
+let g:gitgutter_realtime = 1
+set updatetime=250
