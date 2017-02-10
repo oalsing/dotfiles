@@ -135,3 +135,7 @@ set updatetime=250
 
 " airline
 set laststatus=2
+
+" nerdtree
+let NERDTreeShowHidden=1
+
