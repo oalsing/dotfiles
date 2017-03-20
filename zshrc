@@ -135,3 +135,8 @@ export LANG=en_AU.UTF-8
 eval "$(thefuck --alias)"
 eval "$(thefuck --alias FUCK)"
 
+if [ -f zshalias ]; then
+    source zshalias
+else
+    print "404: zshalias not found. No custom aliases loaded."
+fi
