@@ -82,6 +82,9 @@ alias web='python -m SimpleHTTPServer 8000'
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+### Add texlive
+export PATH="/usr/local/texlive/2016basic/bin/x86_64-darwin:$PATH"
+
 # A shortcut function that simplifies usage of xclip.
 # - Accepts input from either stdin (pipe), or params.
 # ------------------------------------------------
@@ -135,8 +138,8 @@ export LANG=en_AU.UTF-8
 eval "$(thefuck --alias)"
 eval "$(thefuck --alias FUCK)"
 
-if [ -f zshalias ]; then
-    source zshalias
+if [ -f ~/dotfiles/zshalias ]; then
+    source ~/dotfiles/zshalias
 else
     print "404: zshalias not found. No custom aliases loaded."
 fi
