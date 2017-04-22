@@ -10,16 +10,44 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround' " cs%'
-Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
+Plugin 'chriskempson/base16-vim'
+Plugin 'kien/rainbow_parentheses.vim'
+
 
 call vundle#end()
 filetype plugin indent on
 syntax on
+
+" Rainbow colors
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['blue',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 " Tabs and line number
 :set number
@@ -27,7 +55,6 @@ syntax on
 :set tabstop=4
 :set shiftwidth=4
 ":set textwidth=80
-:set colorcolumn=+1
 :set ruler
 "Show tabs and trail"
 :set listchars=tab:>~,trail:.,nbsp:_
@@ -106,12 +133,6 @@ map <C-u> m`b~``
 nmap <Tab> >>
 nmap <S-Tab> <<
 
-"" Rainbow parantheses
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
-
 "ctrpl
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
@@ -141,3 +162,10 @@ let NERDTreeShowHidden=1
 
 " ctrlp
 let g:ctrlp_show_hidden = 1
+
+set exrc
+
+colorscheme base16-ocean
+set background=dark
+
+
