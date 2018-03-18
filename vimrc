@@ -22,7 +22,6 @@ filetype plugin indent on
 syntax on
 
 " Tabs and line number
-filetype plugin indent on
 :set number
 :set expandtab
 :set tabstop=4
@@ -51,9 +50,7 @@ let g:NERDTreeDirArrows=0
 :set backspace=indent,eol,start
 
 " Indentation
-:filetype indent on
-:filetype plugin on
-:filetype on
+filetype plugin indent on
 :set ai
 :set si
 
