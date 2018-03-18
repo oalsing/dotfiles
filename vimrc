@@ -22,10 +22,15 @@ filetype plugin indent on
 syntax on
 
 " Tabs and line number
+filetype plugin indent on
 :set number
 :set expandtab
 :set tabstop=4
 :set shiftwidth=4
+:autocmd Filetype ruby set softtabstop=2
+:autocmd Filetype ruby set sw=2
+:autocmd Filetype ruby set ts=2
+
 ":set textwidth=80
 :set colorcolumn=+1
 :set ruler
