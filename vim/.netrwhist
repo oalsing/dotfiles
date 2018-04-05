@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/oalsing/Dropbox/Studies/KTH/Labbar/Year 2/Programming Paradigm/Prolog/Labb L3'
-let g:netrw_dirhist_2='/Users/oalsing/Dotfiles'
-let g:netrw_dirhist_3='/Users/oalsing/Desktop/MyPlayground.playground'
-let g:netrw_dirhist_4='/Users/oalsing/Dotfiles/vim'
-let g:netrw_dirhist_5='/Users/oalsing/.vim'
-let g:netrw_dirhist_6='/Users/oalsing/Documents/Programming/KTH/Year 4/cprog/lab1/lab1/1.8_better_safe_than_sorry'
-let g:netrw_dirhist_7='/Users/oalsing/Documents/Programming/KTH/Year 4/cprog/lab1/lab1/0.6_the_simple_container'
