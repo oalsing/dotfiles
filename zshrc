@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/texbin:/usr/local/bin:/usr/local/heroku/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/oalsing/.rvm/gems/ruby-2.0.0-p247/bin:/home/oalsing/.rvm/gems/ruby-2.0.0-p247@global/bin:/home/oalsing/.rvm/rubies/ruby-2.0.0-p247/bin:/home/oalsing/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/oalsing/.rvm/bin:/usr/local/share/python"
+export PATH="/usr/texbin:/usr/local/bin:/usr/local/heroku/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/share/python"
 # export MANPATH="/usr/local/man:$MANPATH"
 # export JAVA_HOME=$(/usr/bin/java)
 
@@ -68,8 +68,9 @@ export PATH="/usr/texbin:/usr/local/bin:/usr/local/heroku/bin:/usr/lib/lightdm/l
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# rbenv
 #export PATH="$HOME/.rbenv/bin:$PATH"
-#eval "$(rbenv init -)"
+eval "$(rbenv init -)"
 
 ### Aliases
 
