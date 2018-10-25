@@ -1,6 +1,6 @@
 [user]
-	email = oscar.alsing@gmail.com
-	name = oalsing
+	email = marcus.larson@live.com
+	name = milvan
 [push]
     default = simple
 [alias]
@@ -18,7 +18,8 @@
     su = submodule update --init --recursive
     rmcached = rm --cached 'git ls-files -i --exclude-from=.gitignore'
 [core]
-	excludesfile = /Users/oscaralsing/.gitignore_global
+	excludesfile = /Users/marcus/.gitignore_global
+	editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

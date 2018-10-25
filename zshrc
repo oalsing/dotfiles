@@ -140,3 +140,12 @@ if [ -f zshalias ]; then
 else
     print "404: zshalias not found. No custom aliases loaded."
 fi
+export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
+
+export PATH="$PATH:$(brew --prefix)/opt/python3/bin"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/marcus/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/marcus/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/marcus/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/marcus/google-cloud-sdk/completion.zsh.inc'; fi
