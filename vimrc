@@ -30,7 +30,7 @@ set backspace=indent,eol,start
 
 
 map <C-n> :NERDTreeToggle<CR>
-map <S-b> :new<CR>
+map <S-h> :new<CR>
 map <S-v> :vert new<CR>
 map <c-x> :quit<CR>
 nmap <silent> <c-k> :wincmd k<CR>
@@ -47,3 +47,7 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 let NERDTreeShowHidden=1
+
+command GT GoTest
+command GV GoVet
+command GB GoBuild
